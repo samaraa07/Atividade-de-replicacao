@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabeçalho{
+    display: flex;
+    background-color: rgb(126, 191, 252);
+    align-items: center;
+    gap: 40rem;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    border: 5px solid blue;
+}
+.cabeçalho > h1{
+    color: rgb(3, 3, 150);
+
+}
+.cabeçalho a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.box-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 75vh;
+    width: 100vw;
+}
+.box-content > .nav-bar{
+    display: flex;
+    background-color: rgb(211, 229, 246);
+    width: 12rem;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+.box-content > p{
+    display: flex;
+    width: 88vw;
+    background-color: rgb(240, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: blue;
+    border: 5px solid rgb(126, 191, 252);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .cabeçalho{
+        display: flex;
+        background-color: rgb(126, 191, 252);
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 768px;
+        height: 10vh;
+        border: 5px solid blue;
+    }
+
+    .box-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 75vh;
+        width: 768px;
+    }
+    .box-content > .nav-bar{
+        display: flex;
+        background-color: rgb(211, 229, 246);
+        flex-direction: row;
+        height: 150px;
+        width: 768px;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+    }
+    .box-content > p{
+        display: flex;
+        flex-direction: row;
+        height: 310px;
+        width: 768px;
+        background-color: rgb(240, 255, 255);
+        justify-content: center;
+        align-items: center;
+    }
+}

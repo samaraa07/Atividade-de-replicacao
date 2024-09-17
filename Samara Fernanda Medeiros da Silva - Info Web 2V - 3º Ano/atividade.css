@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight:100;
+  src: url(Poppins.woff2) format('woff2');
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* titulo e subtitulo*/
+.login{
+    display: flex;
+    align-self: baseline;
+    margin-left: 104px;
+    color:#FD0017;
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+
+
+.dados{
+    display: flex;
+    align-self: baseline;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+/* elementos interiores */
+.all-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d6a9ff;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+/* caixa dos elementos */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#6a07c2eb;
+    padding: 40px;
+}
+
+/* dados do login */
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.dados2{
+    display: flex;
+    width: 280px;
+    height: 40px;
+    border: 0px;
+    border-radius: 7px;
+    margin: 5px;
+    outline: none;
+}
+
+.dados2:hover{
+    box-shadow:0px 0px 5px 0px #FD0017;
+}
+
+/* encaminhar dados */
+.botao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 5px;
+    font-family:'Poppins';
+    background-color:#FD0017;
+    color: white;
+    border-radius: 7px;
+    border: 0;
+    height: 40px;
+    width: 280px;
+}
+
+.botao:hover{
+    color: #d6a9ff;
+    background-color:#6a07c2eb;
+}

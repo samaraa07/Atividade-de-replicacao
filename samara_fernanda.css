@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 41, 41);
+    width: 100%;
+    height: 4rem;
+}
+
+.navbar > div, a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+.navbar > div, a:hover{
+    color: gray;
+}
+
+.navbar > div + div > a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: black;
+    background-color: white ;
+    border: none;
+    border-radius: 20px;
+}
+.navbar > div + div > a:hover{
+    background-color: gray;
+    color: white;
+}
+
+/*MANIPULA OS ELEMENTOS DO CORPO */
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* ELEMENTOS DO CORPO: */
+
+/* machete das histórias */
+.titulo{
+    display: flex;
+    background-color: gray;
+    flex-direction: row;
+    width: 80rem;
+    height: 3rem;
+    border-left: 15px solid aqua;
+    border-right: 15px solid aqua;
+    flex-wrap: wrap;
+}
+.titulo > span{
+    margin: 7px;
+}
+
+/* duas histórias */
+.article{
+    display: flex;
+    flex-direction: row;
+    width: 80rem;
+    height: 20rem;
+    border-left: 15px solid aqua;
+    border-right: 15px solid aqua;
+}
+
+.left-side{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    width: 55rem;
+    height: 25rem;
+}
+.left-side > h1{
+    margin: 7px;
+}
+.left-side > h1 ~ p{
+    margin: 10px;
+}
+
+.right-side{
+    display: flex;
+    background-color: green;
+    flex-direction: column;
+    width: 45rem;
+    height: 25rem;
+}
+.right-side > h1{
+    margin: 7px;
+}
+.right-side > h1 ~ p{
+    margin: 10px;
+}
+
+/* mais uma grande história */
+.full-text{
+    display: flex;
+    background-color: blueviolet;
+    align-content: center;
+    flex-direction: column;
+    width: 80rem;
+    height: 35rem;
+    border-left: 15px solid aqua;
+    border-right: 15px solid aqua;
+}
+.full-text > h1{
+    margin: 7px;
+}
+.full-text > h1 ~ p{
+    margin: 10px;
+}
+
+
+/* RODAPÉ */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(45, 41, 41);
+    color: white;
+    width: 100%;
+    height: 3rem;
+}
+
+
+
+/* QUEBREI CABEÇA AQUI, CONSEGUI DE FORMA ALGUMA, 
+PRINCIPALMENTE COM RELAÇÃO À QUEBRA QUE NÃO QUERIA QUEBRAR.
+o código seguinte não se refere ao erro, é apenas uma das milhares tentativas,
+apenas deixei.*/
+/* @media screen and (min-width: 768px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .titulo span{
+        flex-wrap: wrap;
+    }
+    .article > .left-side + .right-side{
+        flex-wrap: wrap;
+    }
+} */
+
